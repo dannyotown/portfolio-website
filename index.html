@@ -1,0 +1,189 @@
+<!DOCTYPE HTML>
+<!--
+	Dimension by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+
+<head>
+	<title>Danny Town - Portfolio</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link rel="stylesheet" href="assets/css/main.css" />
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<noscript>
+		<link rel="stylesheet" href="assets/css/noscript.css" />
+	</noscript>
+	<style>
+		.mySlides {display:none}
+		.w3-left, .w3-right, .w3-badge {cursor:pointer}
+		.w3-badge {height:13px;width:13px;padding:0}
+	</style>
+</head>
+
+<body class="is-preload">
+
+	<!-- Wrapper -->
+	<div id="wrapper">
+
+		<!-- Header -->
+		<header id="header">
+			<div class="logo">
+				<span class="icon fa-laugh-beam"></span>
+			</div>
+			<div class="content">
+				<div class="inner">
+					<h1>Danny Town</h1>
+					<p>Full-Stack Developer</p>
+				</div>
+			</div>
+			<nav>
+				<ul>
+					<li><a href="#intro">About Me</a></li>
+					<li><a href="#work">Projects</a></li>
+					<li><a href="#about">Skills</a></li>
+					<li><a href="#contact">Contact</a></li>
+					<!--<li><a href="#elements">Elements</a></li>-->
+				</ul>
+			</nav>
+		</header>
+
+		<!-- Main -->
+		<div id="main">
+
+			<!-- Intro -->
+			<article id="intro">
+				<h2 class="major">About Me</h2>
+				<p> I started coding in college but the code world really spoke to me at my first workplace. Our company's method to create new employees in Active Directory started my journey. We manually entered each one, so I started thinking 'There has to be a better way'. I was determined to find a better solution. I learned about C# and the .Net framework and eventually created a console application to do the process for me. At first, it was supposed to only be a console application
+					but it turned into a internal web application for our HR department. Now, I am here at Lambda!
+				</p>
+			</article>
+
+			<!-- Work -->
+			<article id="work">
+				<h2 class="major">Projects</h2>
+				<div>
+						<img class="mySlides" style="width: 100%;" src="images/addUser.png">
+					<img class="mySlides" style="width: 100%;" src="images/firstProject.png">
+					<img class="mySlides" style="width: 100%;" src="images/firstProjectSecondPage.png">
+					<img class="mySlides" style="width: 100%;" src="images/sprintChallenge.png">
+					<div class="w3-center w3-display-bottommiddle" style="width:90%">
+					  <div class="w3-left" onclick="plusDivs(-1)">&#10094;</div>
+					  <div class="w3-right" onclick="plusDivs(1)">&#10095;</div>
+					  <span class="w3-badge demo w3-border" onclick="currentDiv(1)"></span>
+					  <span class="w3-badge demo w3-border" onclick="currentDiv(2)"></span>
+					  <span class="w3-badge demo w3-border" onclick="currentDiv(3)"></span>
+					</div>
+				  </div>
+				  <p style="text-align: center;"><a href="https://github.com/dannyotown">GitHub</a></p>
+				
+			</article>
+
+			<!-- About -->
+			<article id="about">
+				<h2 class="major">Skills</h2>
+				<span class="image main"><img src="images/codingPicture.jpg" alt="" /></span>
+				<div class="skillsMainDiv">
+				<div class="skillsBox">
+				<h4>FrontEnd</h4>	
+				<ul>
+					<li>HTML</li>
+					<li>Javascript</li>
+					<li>React.JS</li>
+					<li>JQuery</li>
+				</ul>
+			</div>
+				<div class="skillsBox">
+				<h4>Styling</h4>	
+				<ul>
+					<li>Css</li>
+					<li>Less</li>
+				</ul>
+				</div>
+				<div class="skillsBox">
+					<h4>Backend</h4>
+				<ul>
+					<li>C#</li>
+					<li>.NET Framework</li>
+					<li>.Net MVC/Web Api</li>
+					<li>ASP.NET Webforms/Forms</li>
+					<li>Node.JS</li>
+				</ul>
+			</div>
+		</div>
+			</article>
+
+			<!-- Contact -->
+			<article id="contact">
+				<h2 class="major">Contact</h2>
+				<form method="post" action="#">
+					<div class="fields">
+						<div class="field half">
+							<label for="name">Name</label>
+							<input type="text" name="name" id="name" />
+						</div>
+						<div class="field half">
+							<label for="email">Email</label>
+							<input type="text" name="email" id="email" />
+						</div>
+						<div class="field">
+							<label for="message">Message</label>
+							<textarea name="message" id="message" rows="4"></textarea>
+						</div>
+					</div>
+					<ul class="actions">
+						<li><input type="submit" value="Send Message" class="primary" /></li>
+						<li><input type="reset" value="Reset" /></li>
+					</ul>
+				</form>
+			</article>
+		</div>
+
+		<!-- Footer -->
+		<footer id="footer">
+			<p class="copyright">&copy; Danny Town. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
+		</footer>
+
+	</div>
+
+	<!-- BG -->
+	<div id="bg"></div>
+
+	<!-- Scripts -->
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/browser.min.js"></script>
+	<script src="assets/js/breakpoints.min.js"></script>
+	<script src="assets/js/util.js"></script>
+	<script src="assets/js/main.js"></script>
+
+</body>
+<script>
+	var slideIndex = 1;
+	showDivs(slideIndex);
+	
+	function plusDivs(n) {
+	  showDivs(slideIndex += n);
+	}
+	
+	function currentDiv(n) {
+	  showDivs(slideIndex = n);
+	}
+	
+	function showDivs(n) {
+	  var i;
+	  var x = document.getElementsByClassName("mySlides");
+	  var dots = document.getElementsByClassName("demo");
+	  if (n > x.length) {slideIndex = 1}
+	  if (n < 1) {slideIndex = x.length}
+	  for (i = 0; i < x.length; i++) {
+		x[i].style.display = "none";  
+	  }
+	  for (i = 0; i < dots.length; i++) {
+		dots[i].className = dots[i].className.replace(" w3-white", "");
+	  }
+	  x[slideIndex-1].style.display = "block";  
+	  dots[slideIndex-1].className += " w3-white";
+	}
+	</script>
+</html>
